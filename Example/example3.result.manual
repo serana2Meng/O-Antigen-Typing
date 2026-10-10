@@ -1,0 +1,10 @@
+Sample: example3
+Decision_Type: manual
+Input_File: /path/example3.blast
+----------------------------------------------------------------------
+Rank    O_Antigen       Cover_Ratio     Max_Fragment    Max_Frag_Ratio
+----------------------------------------------------------------------
+1       O15     0.9757  7883    0.7651
+2       O1      0.8440  15151   0.8286
+----------------------------------------------------------------------
+Action: Cannot determine automatically. Please manually check.
