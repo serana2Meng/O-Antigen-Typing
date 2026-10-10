@@ -1,0 +1,11 @@
+Sample: example2
+Decision_Type: merge
+Input_File: /path/example2.blast
+----------------------------------------------------------------------
+Rank    O_Antigen       Cover_Ratio     Max_Fragment    Max_Frag_Ratio
+----------------------------------------------------------------------
+1       O4      0.9736  14561   0.7839
+2       O18     0.8998  9454    0.4452
+3       O17     0.8601  6229    0.3886
+----------------------------------------------------------------------
+Action: Please manually verify the top candidate(s).
