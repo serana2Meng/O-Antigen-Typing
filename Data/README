@@ -1,0 +1,37 @@
+# Data
+
+This folder contains O-antigen reference sequences of *Vibrio parahaemolyticus*.
+
+## Files
+
+A single FASTA file contains all 18 O-antigen sequences:
+
+- `O1_O18.fasta` – 18 O-antigen reference sequences.
+
+The sequences include:
+
+1. **O1–O16 antigen sequences** (16 sequences)  
+   Retrieved from NCBI.
+
+2. **O17 and O18 antigen sequences** (2 sequences)  
+   Identified in this study.
+
+## Source
+
+- O1–O16 sequences were retrieved from NCBI.  
+- O17 and O18 sequences were obtained in this study.
+
+## Usage
+
+These sequences are prepared as the BLASTn database/reference sequences.  
+Sample sequences are queried against them to generate the BLASTn m6 output, which is then used as input for the Perl scripts in this repository.
+
+## License
+
+- Code in this repository is licensed under the MIT License.
+- Data in this folder is licensed under CC BY 4.0, except where otherwise noted.
+
+## Notes
+
+- All 18 sequences are provided in a single FASTA file.
+- Additional data are available from the corresponding author upon reasonable request.
