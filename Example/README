@@ -29,39 +29,48 @@ perl antigen_screen.pl example/sample.blast example/sample.result 90 0.9 example
 
 These values are used in this example. Adjust as needed.
 
-## Expected output
+##Expected output
 
-The output depends on whether a definitive match is found.
+The output depends on the classification result.
 
-### 1. Match found (full-sequence or merge)
+1. Classification = 1 (full-sequence match)
 
-The script produces a single non-empty `sample.result` file.  
-It is a tab-separated file with data row:
+The script produces a single non-empty result file.
+It is a tab-separated file :
 
-1. `sample_name` – sample name
-2. `name` – matched antigen name
-3. `result` – `1` for full-sequence match, `1*` for merged sequences match
+sample_name – sample name
 
-### 2. No definitive match (unresolved case)
+name – matched antigen name
 
-The script produces **two files**:
+result – 1
 
-- `sample.result` – an empty file
-- `sample.manual` – a plain-text file for manual review
+2. Classification = 1* (partial / word-level match)
 
-The `.manual` file contains:
+The script produces:
 
-- `Sample` – input sample name
-- `Decision_Type` – `manual` when automatic determination fails
-- `Input_File` – the input file used
-- A ranked table of candidate antigens with:
-  - `Rank` – priority level of each candidate; lower value = higher priority, 1 = highest
-  - `O_Antigen` – candidate antigen name
-  - `Cover_Ratio` – coverage ratio
-  - `Max_Fragment` – maximum fragment length
-  - `Max_Frag_Ratio` – maximum fragment ratio
+result – a non-empty tab-separated file (sample_name, name, result = 1*)
 
-The included `sample.result` and `sample.manual` are the expected outputs for this example.
+sample.result.merge – an auxiliary file for verification
+
+3. Unresolved (no definitive match)
+
+The script produces two files:
+
+result – an empty file
+
+sample.result.manual – a file containing:
+
+input sample name
+
+input file(s) used
+
+classification level
+
+list of ambiguous/suspicious candidates
+
+computed parameters for manual review, including rank (priority level of each candidate; lower value = higher priority, 1 = highest)
+
+sample.result, sample.result.merge, and sample.result.manual are the expected outputs.
 
 ## Notes
 
