@@ -51,11 +51,11 @@ perl antigen_screen.pl <blast_m6> <output_file> <identity_threshold> <coverage_t
 ```
 ## Parameters
 
-1 blast_m6	BLASTn m6-format alignment result (sample sequences vs. database sequences)
-2	output_file	Output file name (e.g. sample.result)
-3	identity_threshold	Identity threshold (%) – example: 90
-4	coverage_threshold	Coverage threshold – example: 0.9
-5	antigen_list	List of antigen sequence names
-6	sample_name
+- blast_m6	BLASTn m6-format alignment result (sample sequences vs. database sequences)
+- output_file	Output file name (e.g. sample.result)
+- identity_threshold	Identity threshold (%) – example: 90
+- coverage_threshold	Coverage threshold – example: 0.9
+- antigen_list	List of antigen sequence names
+- sample_name
 
 See example/README.md for details.
