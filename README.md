@@ -49,9 +49,9 @@ text
 ```bash
 perl antigen_screen.pl <blast_m6> <output_file> <identity_threshold> <coverage_threshold> <antigen_list> <sample_name>
 ```
-##Parameters
-Position	Argument	Description
-1	blast_m6	BLASTn m6-format alignment result (sample sequences vs. database sequences)
+## Parameters
+
+1 blast_m6	BLASTn m6-format alignment result (sample sequences vs. database sequences)
 2	output_file	Output file name (e.g. sample.result)
 3	identity_threshold	Identity threshold (%) – example: 90
 4	coverage_threshold	Coverage threshold – example: 0.9
