@@ -3,7 +3,7 @@
 antigen_screen.pl
 A Perl script for O-antigen typing from BLASTn m6 results.
 
-This script identifies antigen types by comparing a query genome against curated O antigen reference databases. It is designed for O-antigen typing across all O serotypes ，including the O-antigen references collected in this project.
+This script identifies antigen types by comparing a query genome against curated O antigen reference databases. It is designed for O-antigen typing across all O serotypes, including the O-antigen references collected in this project.
 
 It uses a two-tier strategy:
 
