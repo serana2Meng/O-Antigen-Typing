@@ -40,7 +40,7 @@ blastn \
 # Run the antigen screening script on the BLAST output
 perl antigen_screen.pl query_genome.O.blast.m6 query_genome.O.candicate 90 0.9 O_antigen_references.list query_genome
 
-The -evalue 1e-5 threshold is set at the BLAST step; the Perl script does not re-apply this threshold.
+The -evalue 1e-5 threshold is set at the BLAST step, the Perl script does not re-apply this threshold.
 
 text
 ```
