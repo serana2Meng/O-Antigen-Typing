@@ -58,4 +58,4 @@ perl antigen_screen.pl <blast_m6> <output_file> <identity_threshold> <coverage_t
 - antigen_list	List of antigen sequence names
 - sample_name
 
-See example/README.md for details.
+See example/README.md for more details.
