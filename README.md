@@ -22,7 +22,7 @@ Results are reported in three categories:
 - Perl (>= 5.10)
 - BLAST+ (makeblastdb, blastn)
   
-##Example workflow
+## Example workflow
 
 ```bash
 ## Build BLAST databases from the curated O antigen references
